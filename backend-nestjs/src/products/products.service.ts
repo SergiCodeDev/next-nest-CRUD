@@ -34,7 +34,7 @@ export class ProductsService {
   async findOne(id: number) {
     const productoEncontrado = await this.prismaService.product.findUnique({
       where: {
-        id: id
+        id: id,
       }
     })
 
